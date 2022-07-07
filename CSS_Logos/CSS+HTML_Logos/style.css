@@ -6,7 +6,12 @@
 @font-face {
     font-family: 'GothamPro';
     src: url(GothamPro-Light.eot);
-    src: url(GothamPro-Light.woff2) format("woff2"),url(GothamPro-Light.woff) format("woff"),url(GothamPro-Light.ttf) format("truetype"),url(GothamPro-Light.svg#GothamPro-Light) format("svg"),url(GothamPro-Light.eot?#iefix) format("embedded-opentype");
+    src: url(GothamPro-Light.woff2) 
+    format("woff2"),url(GothamPro-Light.woff) 
+    format("woff"),url(GothamPro-Light.ttf) 
+    format("truetype"),url(GothamPro-Light.svg#GothamPro-Light) 
+    format("svg"),url(GothamPro-Light.eot?#iefix) 
+    format("embedded-opentype");
     font-weight: 800;
     font-style: normal
   }
@@ -25,19 +30,19 @@ body{
     flex-direction: column;
   }
 
-  .title-container {
+  .html-title-container {
     margin: 0;
     padding-bottom: 5px;
   }
   
-  .title {
+  .html-title {
    font-size: 3rem;
    font-family: 'GothamPro';
    font-weight: 800;
    font-style: normal;
   }
   
-  .logo {
+  .html-logo {
     height: 210px;
     width: 175px;
     margin: 0 auto;
@@ -46,8 +51,8 @@ body{
     clip-path: polygon(0% 0%, 100% 0%, 90% 90%, 50% 100%, 10% 90%);
   }
   
-  .logo::before {
-    content: '';
+  .html-logo::before {
+      content: '';
       background: linear-gradient(
         to right,
         #E44D26 0%,
@@ -63,8 +68,8 @@ body{
       left: 15px;
   }
   
-  .logo::after {
-        content: '';
+  .html-logo::after {
+      content: '';
       background: linear-gradient(
         to right,
         #EBEBEB 0%,
