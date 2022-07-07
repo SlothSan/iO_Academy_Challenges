@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'GothamPro';
     src: url(GothamPro-Light.eot);
     src: url(GothamPro-Light.woff2) 
@@ -14,7 +14,7 @@
     format("embedded-opentype");
     font-weight: 800;
     font-style: normal
-  }
+  } */
   
 
 body{
@@ -44,7 +44,7 @@ body{
     padding-bottom: 5px;
   }
   
-  .html-title {
+  .logo-title {
    font-size: 3rem;
    font-family: 'GothamPro';
    font-weight: 800;
