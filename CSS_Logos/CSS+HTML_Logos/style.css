@@ -20,10 +20,19 @@
 body{
     font-size: 10px;
   }
+
   
-  .container {
+  .logo-container {
+    width: 100vh;
     height: 100vh;
-    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .html-container {
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
