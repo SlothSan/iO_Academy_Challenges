@@ -10,10 +10,13 @@ let x = setInterval(function(){
     let minutes = Math.floor((distance % (1000 * 60 * 60 )) / (1000 * 60));
     let seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
-    document.getElementById("timer").innerHTML = days + "D " + hours + "H " + minutes + "M " + seconds + "S ";
+    document.getElementById("timer-days").innerHTML = days + " Days";
+    document.getElementById("timer-hours").innerHTML = hours + " Hours";
+    document.getElementById("timer-minutes").innerHTML = minutes + " Minutes";
+    document.getElementById("timer-seconds").innerHTML = seconds + " Seconds";
 
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("time").innerHTML = "Congrats We Made It !!!";
+        document.getElementById("timer").innerHTML = "Congrats We Made It !!!";
     }
 }, 1000);
