@@ -18,11 +18,15 @@ body{
   }
   
   .html-container, .css-container {
-    width: 50%;
+    width: 400px;
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border-radius: 50%;
+    border: 5px solid #EBEBEB;
+    margin: 0 10px;
   }
 
   .logo-title-container {
