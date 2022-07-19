@@ -41,8 +41,8 @@ function lengthByAmountOfPostsAndRailings(int $amountOfPosts, int $amountOfRaili
         $amountOfPosts--;
         $amountOfRailings--;
         $length += ($postLength + $railingLength);
-    } while ($amountOfPosts > 0 && $amountOfRailings > 0);
+    } while ($amountOfPosts > 0 && $amountOfRailings > 0); //This line is fucky
     return $length;
 }
-echo "<p> your fence will be " . lengthByAmountOfPostsAndRailings(200, 300) . "meters long </p>";
+echo "<p> your fence will be " . lengthByAmountOfPostsAndRailings(12, 50) . "meters long </p>";
 ?>
