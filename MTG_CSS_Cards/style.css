@@ -16,6 +16,7 @@ body {
 
 .card-container {
     display: flex;
+    flex-direction: column;
     position: static;
     background-image: url("./imgs/cardBacks/greenCardBack.png");
     background-color: blue;
@@ -25,13 +26,22 @@ body {
 
 .card-title {
     position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     top: 25px;
     left: 25px;
     font-size: 1.2rem;
 }
 
+.card-art-container {
+    position: static;
+}
+
 .card-art {
     position: relative;
-    width: 400px;
-    height: 200px
+    top: 59px;
+    left: 45px;
+    width: 407px;
+    height: 308px
 }
