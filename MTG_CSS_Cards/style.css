@@ -73,38 +73,41 @@ body {
     width: 500px;
 }
 
-.card-title-container {
+.top-container {
     position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 100%;
-    top: 23px;
-    left: 25px;
-    font-size: 1.4rem;
+    height: 5%;
+    top: 42px;
+    left: 50px;
+    font-size: 1.3rem;
+}
+
+.card-title-container {
+    width: 80%;
 }
 
 .card-title {
-    position: relative;
     display: flex;
     flex-direction: row;
     letter-spacing: 1px;
     width: 100%;
-    top: 23px;
-    left: 25px;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
 .mana-cost-container {
     display: flex;
+    margin-left: 5%;
     flex-direction: row;
+    justify-content: ;
+    width: 35%;
     gap: 5px;
 }
 
 .mana-cost {
     position: relative;
-    top: 22px;
-    right: 70px;
     height: 25px;
 }
 
@@ -127,7 +130,7 @@ body {
 
 .card-art {
     position: relative;
-    top: 57px;
+    top: 50px;
     left: 45px;
     width: 407px;
     height: 308px
