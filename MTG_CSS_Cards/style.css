@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+}
+
+.container {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    display: flex;
+    position: static;
+    background-image: url("./imgs/cardBacks/greenCardBack.png");
+    background-color: blue;
+    height: 698px;
+    width: 500px;
+}
+
+.card-title {
+    position: relative;
+    top: 25px;
+    left: 25px;
+    font-size: 1.2rem;
+}
+
+.card-art {
+    position: relative;
+    width: 400px;
+    height: 200px
+}
