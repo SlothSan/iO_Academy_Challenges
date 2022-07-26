@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Beleren Small Caps';
+    src: url('BelerenSmallCaps-Bold.woff2') format('woff2'),
+        url('BelerenSmallCaps-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Beleren';
+    src: url('Beleren-Bold.woff2') format('woff2'),
+        url('Beleren-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Matrix';
+    src: url('Matrix-Bold.woff2') format('woff2'),
+        url('Matrix-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Relay';
+    src: url('Relay-Medium.woff2') format('woff2'),
+        url('Relay-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Matrix';
+    src: url('Matrix-Bold.woff2') format('woff2'),
+        url('Matrix-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
