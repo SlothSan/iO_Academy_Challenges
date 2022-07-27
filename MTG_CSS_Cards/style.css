@@ -84,7 +84,7 @@ body {
     width: 100%;
     top: 45px;
     font-size: 1.3rem;
-    margin-left: 12%;
+    margin-left: 10%;
 }
 
 .card-title-container {
@@ -101,7 +101,7 @@ body {
 .mana-cost-container {
     display: flex;
     justify-content: flex-end;
-    width: 18.5%;
+    width: 21%;
     flex-direction: row;
     gap: 5px;
 }
