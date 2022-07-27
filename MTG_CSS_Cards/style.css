@@ -70,7 +70,7 @@ body {
     flex-direction: column;
     position: static;
     background-image: url("./imgs/cardBacks/greenCardBack.png");
-    background-color: blue;
+    background-color: black;
     height: 698px;
     width: 500px;
 }
@@ -159,4 +159,54 @@ body {
 .card-set-logo {
     height: 25px;
     margin-top: -2px;
+}
+
+.description-container {
+    width: 407px;
+    height: 185px;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+.ability-cost-container {
+    float: left;
+    display: flex;
+    height: 19px
+}
+
+.description {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ability-cost {
+    height: 20px;
+}
+
+.description-contents-container {
+    font-size: 1.1rem;
+}
+
+.designer-text {
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.powerandtough-container {
+    margin-left: 80%;
+    margin-top: 0.5%;
+    font-size: 1.3rem;
+    font-style: bold;
+}
+
+.ability-neutral {
+    position: relative;
+}
+
+.ability-neutral-cost {
+    position: absolute;
+    font-weight: bold;
+    margin-left: 4px;
+    font-size: 1.1rem;
+    z-index: 10;
 }
