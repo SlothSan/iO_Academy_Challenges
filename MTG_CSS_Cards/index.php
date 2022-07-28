@@ -66,22 +66,57 @@ session_start();
             }
         }
         if($result['blackCost'] != null) {
-
+            $counterBlack = $result['blackCost'];
+            for ($counterBlack; $counterBlack > 0; $counterBlack--) {
+                echo '<img class="mana-cost-color" src="./imgs/manaCosts/mana_b.png" alt="black mana">';
+            }
         }
         if($result['blueCost'] != null) {
-
+            $counterBlue = $result['blueCost'];
+            for ($counterBlue; $counterBlue > 0; $counterBlue--) {
+                echo '<img class="mana-cost-color" src="./imgs/manaCosts/mana_u.png" alt="blue mana">';
+            }
         }
         if($result['redCost'] != null) {
-
+            $counterRed = $result['redCost'];
+            for ($counterRed; $counterRed > 0; $counterRed--) {
+                echo '<img class="mana-cost-color" src="./imgs/manaCosts/mana_r.png" alt="red mana">';
+            }
         }
         if($result['whiteCost'] != null) {
-
+            $counterWhite = $result['whiteCost'];
+            for ($counterWhite; $counterWhite > 0; $counterWhite--) {
+                echo '<img class="mana-cost-color" src="./imgs/manaCosts/mana_w.png" alt="white mana">';
+            }
         }
 
         echo "</div>";
+        echo "</div>";//End of top-container !
+        echo "<div class='card-art-container'>";
+                    echo "<img class='card-art' src='./imgs/cardArt/" . $result['cardArt'] . "'" . " >";
+        echo "</div>"; //end of card art
+        echo "<div class='card-type-container'>"; //Start of card type container
+                    echo "<div class='card-type-title-container'>";
+                        echo "<p class='card-type'>" . $result['cardType'] . "</p>";
+                    echo "</div>";
+                    echo "<div class='card-type-setLogo-container'>";
+                        if($result['setLogo'] === 'common') {
+                            echo "<img class='card-set-logo' src='./imgs/M15_setIcons/m15_setIcon_common.jpeg' alt='common'>";
+                        }
+                        if($result['setLogo'] === 'uncommon') {
+                            echo "<img class='card-set-logo' src='./imgs/M15_setIcons/m15_setIcon_uncommon.jpeg' alt='common'>";
+                        }
+                        if($result['setLogo'] === 'rare') {
+                            echo "<img class='card-set-logo' src='./imgs/M15_setIcons/m15_setIcon_rare.jpeg' alt='common'>";
+                        }
+                        if($result['setLogo'] === 'mythicRare') {
+                            echo "<img class='card-set-logo' src='./imgs/M15_setIcons/m15_setIcon_mythicRare.jpeg' alt='common'>";
+                        }
+                   echo "</div>";
+        echo"</div>"; //End of card type container
         echo "</div>";
         echo "</div>";
-        echo "</div>";
+
         echo "</div>";
         echo "</div>";
     }
