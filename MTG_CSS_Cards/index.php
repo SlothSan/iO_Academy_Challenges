@@ -5,7 +5,7 @@ session_start();
 
 <html lang="en">
 <head>
-    <title>Testing 123</title>
+    <title>Magic The Gathering Card Collector</title>
     <link href="style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
@@ -93,7 +93,7 @@ session_start();
         echo "</div>";
         echo "</div>";//End of top-container !
         echo "<div class='card-art-container'>";
-                    echo "<img class='card-art' src='./imgs/cardArt/" . $result['cardArt'] . "'" . " >";
+                    echo "<img class='card-art' src='./imgs/cardArt/" . $result['cardArt'] . "'" . " alt=" . "'" . $result['title'] . " art" . "'" .  ">";
         echo "</div>"; //end of card art
         echo "<div class='card-type-container'>"; //Start of card type container
                     echo "<div class='card-type-title-container'>";
@@ -114,6 +114,47 @@ session_start();
                         }
                    echo "</div>";
         echo"</div>"; //End of card type container
+        echo "<div class='description-container'>";
+            echo "<span class='ability-cost-container'>";
+                if($result['abilityCostGeneric'] != null) { //Logic goes here for ability costs / tap
+                    echo "<img class='ability-cost ability-neutral' src='./imgs/manaCosts/mana_circle.png' alt='ability mana cost'>";
+                    echo "<p class='ability-neutral-cost'>" . $result['abilityCostGeneric'] . "</p>";
+                }
+                if ($result['abilityCostGreen'] != null) {
+                    echo "<img class='ability-cost' src='./imgs/manaCosts/mana_g.png' alt='green ability mana cost'>";
+                }
+                if ($result['abilityCostRed'] != null) {
+                    echo "<img class='ability-cost' src='./imgs/manaCosts/mana_r.png' alt='red ability mana cost'>";
+                }
+                if ($result['abilityCostBlue'] != null) {
+                    echo "<img class='ability-cost' src='./imgs/manaCosts/mana_u.png' alt='blue ability mana cost'>";
+                }
+                if ($result['abilityCostBlack'] != null) {
+                    echo "<img class='ability-cost' src='./imgs/manaCosts/mana_b.png.' alt='black ability mana cost'>";
+                }
+                if ($result['abilityCostWhite'] != null) {
+                    echo "<img class='ability-cost' src='./imgs/manaCosts/mana_w.png' alt='white ability mana cost'>";
+                }
+                if ($result['abilityTap'] != null) {
+                    echo ", ";
+                    echo "<img class='ability-cost' src='./imgs/manaCosts/mana_t.png' alt='tap-icon'>";
+                    echo  ", ";
+                }
+                echo "</span>";
+                echo "<div class='description-contents-container'>";
+                if ($result['description'] != null) {
+                    echo "<p>" . $result['description'] . "</p>";
+                }
+                if($result['designerFlavourText'] != null) {
+                    echo "<p class='designer-text'>" . $result['designerFlavourText'] . "</p>";
+                }
+                echo "</div>";
+                echo "</div>"; //End of description container
+        echo "<div class='powerandtough-container'>";
+            if($result['powerAndToughness'] != null) {
+                echo "<p class='powerandtough'>". $result['powerAndToughness'] . "</p>";
+            }
+        echo "</div>"; // end of power and tough
         echo "</div>";
         echo "</div>";
 
