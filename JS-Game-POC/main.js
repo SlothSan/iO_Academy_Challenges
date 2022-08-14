@@ -3,7 +3,7 @@ const move = document.querySelector('#move-item');
 const timerElement = document.querySelector('#timer');
 
 let lastKey = 0;
-let seconds = 0;
+let seconds = 0.0;
 let timerStart = false;
 
 //Detect KeyPresses. 
