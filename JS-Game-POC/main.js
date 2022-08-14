@@ -47,7 +47,7 @@ function detectKey(event) {
 
 function incrementSeconds() {
     seconds += 0.1;
-    timerElement.innerText = "Timer: " + seconds + 'S';
+    timerElement.innerText = "Timer: " + seconds.toFixed(2) + 'S';
 }
 
 // let timer = setInterval(incrementSeconds, 100);
