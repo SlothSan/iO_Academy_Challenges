@@ -17,7 +17,7 @@ function detectKey(event) {
 
         // left arrow
         if(timerStart == false) {
-            timer = setInterval(incrementSeconds, 100);
+            timer = setInterval(incrementSeconds, 50);
             timerStart = true;
         }
         if(parseInt(positionLeft) == 970) {
@@ -31,7 +31,7 @@ function detectKey(event) {
      else if (currentKey == '39' && currentKey != lastKey) {
         // right arrows
         if(timerStart == false) {
-            timer = setInterval(incrementSeconds, 100);
+            timer = setInterval(incrementSeconds, 50);
             timerStart = true;
         }
         if(parseInt(positionLeft) == 970) {
@@ -46,11 +46,10 @@ function detectKey(event) {
 
 
 function incrementSeconds() {
-    seconds += 0.1;
+    seconds += 0.05;
     timerElement.innerText = "Timer: " + seconds.toFixed(2) + 'S';
 }
 
-// let timer = setInterval(incrementSeconds, 100);
 
 
 
