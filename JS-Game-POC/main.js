@@ -14,12 +14,18 @@ function detectKey(event) {
      event = event || window.event;
      if (event.keyCode == '37') {
         // left arrow
+        if(parseInt(positionLeft) == 970) {
+            console.log('You Made It Brah!');
+            return '';
+        }
         move.style.left  = (parseInt(positionLeft) + 5) + 'px';
-        console.log(parseInt(positionLeft));
      }
      else if (event.keyCode == '39') {
         // right arrows
+        if(parseInt(positionLeft) == 970) {
+            console.log('You Made It Brah!');
+            return '';
+        }
         move.style.left  = (parseInt(positionLeft) + 5) + 'px';
-        console.log(parseInt(positionLeft));
      }
  }
