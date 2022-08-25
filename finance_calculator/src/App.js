@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import InfoContainer from './header/InfoContainer';
 import './App.css';
 
