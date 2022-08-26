@@ -1,5 +1,5 @@
 const Calculator = () => {
 
-    }
+}
 
-    export default Calculator;
+export default Calculator;
